@@ -1,9 +1,9 @@
 /* Con grid podemos crear un layout de columnas y otras funcionalidades más */
 /* Más info en el siguiente enlace => https://www.w3schools.com/css/css_grid.asp*/
-.grid-container {
+/* .grid-container {
   display: grid;
   grid-template-columns:1fr 2fr;
-}
+} */
 
 /* Con flex podemos determinar cómo se acomodan los elementos internos a un contenedor */
 /* Más info en el siguiente enlace => https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox */
@@ -43,19 +43,6 @@ h3{
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .accordion{
-    position: relative;
-    left: 38%;  
-    top: 10px;
-    width: 18rem;
-  } 
-  .accordion{
-    position: relative;
-    left: 340px;
-  }
-}
-
 @media only screen and (max-width: 320px) {
   .square{
     position: relative;
@@ -64,6 +51,29 @@ h3{
     height: 140px;
   }
 }
+
+@media only screen and (width: 768px) {
+  .square{
+    position: relative;
+    left: 80px;
+    width: 300px;
+    height: 140px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns:1fr 2fr;
+  }
+  .accordion{
+    position: relative;
+    top: 10px;
+    left: 220px;
+    width: 400px;
+  }
+}
+
 
 
 
